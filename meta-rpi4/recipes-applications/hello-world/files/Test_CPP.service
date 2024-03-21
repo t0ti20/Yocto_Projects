@@ -1,11 +1,17 @@
 [Unit]
+# Description of the service
 Description=My Test Application For Systemd
 
 [Service]
+# Command to start the service (path to the executable)
 ExecStart=/usr/bin/Test_CPP
+# Type of service (simple means it's a basic, non-forking service)
 Type=simple
+# How to kill the service (process means to kill the main process)
 KillMode=process
+# Uncomment this line if you want to redirect standard output to both journal and console
 #StandardOutput=journal+console
 
 [Install]
+# Specifies when the service should be started (multi-user.target means it's started during boot)
 WantedBy=multi-user.target
