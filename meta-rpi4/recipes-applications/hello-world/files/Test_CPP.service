@@ -1,0 +1,11 @@
+[Unit]
+Description=My Test Application For Systemd
+
+[Service]
+ExecStart=/usr/bin/Test_CPP
+Type=simple
+KillMode=process
+#StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
