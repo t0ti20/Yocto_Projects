@@ -1,0 +1,11 @@
+[Unit]
+Description=Enable Wifi BY Running Wifi Script
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/Enable_Wifi.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
