@@ -9,7 +9,7 @@ SRCREV = "${AUTOREV}"
 # Source directory
 S = "${WORKDIR}/git"
 # Module name according to make file
-MODULE_NAME= "Button"
+MODULE_NAME= "LED"
 # Inherit module class
 inherit module
 # Pass MODULE_NAME using EXTRA_OEMAKE

@@ -1,8 +1,0 @@
-append network to /home/t0ti20/Desktop/poky/meta/recipes-connectivity/wpa-supplicant/wpa-supplicant/wpa_supplicant.conf-sane
-```bash
-network={
-    ssid="Wi-Fi"
-    psk="Sasa2000!!"
-    key_mgmt=WPA-PSK
-}
-```

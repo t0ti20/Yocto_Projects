@@ -1,6 +1,7 @@
+# License information
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
-#Set source files locations
+# Set source files locations
 SRC_URI = "git://github.com/t0ti20/CPP_Application;protocol=https;branch=master"
 SRC_URI:append = " file://Test_CPP.service "
 # Set the package version
