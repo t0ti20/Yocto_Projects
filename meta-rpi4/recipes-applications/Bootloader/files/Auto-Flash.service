@@ -1,0 +1,23 @@
+[Unit]
+# Clearly states the purpose of the unit.
+Description=Automatically Fetch And Flash Update
+# Ensures that the service starts after the network is up.
+After=network.target 
+
+[Service]
+# Specifies the command to execute on service start.
+ExecStart=/usr/bin/Bootloader -r 
+# Configures the service to restart automatically if it fails.
+Restart=always 
+# Sets the time to wait before restarting the service after failure.
+RestartSec=3 
+# Directs standard output to the system journal.
+StandardOutput=journal 
+# Directs standard error to the system journal.
+StandardError=journal 
+# Sets the identifier for syslog messages related to this service.
+SyslogIdentifier=Bootloader_Monitor 
+
+[Install] 
+# Defines the target that wants this unit, indicating it's part of multi-user system startup.
+WantedBy=multi-user.target 
